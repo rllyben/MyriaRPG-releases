@@ -1,7 +1,7 @@
 ﻿{
-    "serverLinuxUrl":  "https://github.com/rllyben/MyriaRPG-releases/releases/download/v0.2.15/MyriaServer_linux-x64_0.2.15.zip",
-    "serverWinUrl":  "https://github.com/rllyben/MyriaRPG-releases/releases/download/v0.2.15/MyriaServer_win-x64_0.2.15.zip",
-    "installerUrl":  "https://github.com/rllyben/MyriaRPG-releases/releases/download/v0.2.15/MyriaRPG_Setup_0.2.15.exe",
-    "version":  "0.2.15",
-    "notes":  "Alpha build 0.2.15"
+    "serverLinuxUrl":  "https://github.com/rllyben/MyriaRPG-releases/releases/download/v0.2.16/MyriaServer_linux-x64_0.2.16.zip",
+    "serverWinUrl":  "https://github.com/rllyben/MyriaRPG-releases/releases/download/v0.2.16/MyriaServer_win-x64_0.2.16.zip",
+    "installerUrl":  "https://github.com/rllyben/MyriaRPG-releases/releases/download/v0.2.16/MyriaRPG_Setup_0.2.16.exe",
+    "version":  "0.2.16",
+    "notes":  "Alpha build 0.2.16"
 }
