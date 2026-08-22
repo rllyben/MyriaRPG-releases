@@ -1,6 +1,6 @@
 # Datenschutzerklärung — MyriaRPG
 
-Stand: 2026-08-21
+Stand: 2026-08-22
 
 Diese Datenschutzerklärung informiert dich über Art, Umfang und Zweck der
 Verarbeitung personenbezogener Daten bei Nutzung von MyriaRPG (WPF-Client,
@@ -58,6 +58,18 @@ nicht statt.
 Der WPF-Client und die Server setzen keine Cookies, kein Analytics- und
 kein Werbetracking ein.
 
+### 2.5 Übertragungssicherheit
+
+Sämtliche Kommunikation zwischen dem WPF-Client und den Servern (Login,
+Registrierung, Spielstand-Synchronisation) erfolgt verschlüsselt über TLS
+(HTTPS). Da für die Server aktuell keine eigene Domain existiert, kommt ein
+selbstsigniertes Zertifikat zum Einsatz, dessen exakter Fingerabdruck fix im
+Client hinterlegt ist (sogenanntes „Certificate Pinning") — der Client
+vertraut damit gezielt genau diesem einen Zertifikat, nicht signierten
+Zertifikaten im Allgemeinen. Sobald eine Domain vorhanden ist, wird auf ein
+von einer öffentlichen Zertifizierungsstelle signiertes Zertifikat
+umgestellt.
+
 ## 3. Rechtsgrundlage der Verarbeitung
 
 Die Verarbeitung der Account- und Spielstanddaten erfolgt zur Erfüllung
@@ -75,11 +87,12 @@ implementiert.
 
 ## 5. Weitergabe an Dritte
 
-Es findet keine Weitergabe deiner Daten an Dritte statt. Die Server werden
-[Hosting-Anbieter/Standort eintragen] betrieben. Trage hier ein, sobald
-feststeht, wo der Server gehostet wird (EU/EWR bevorzugt; bei
-Drittstaaten-Hosting sind zusätzliche Angaben nach Art. 44 ff. DSGVO
-erforderlich).
+Es findet keine Weitergabe deiner Daten an Dritte statt. Die Server (Auth-
+und Realm-Server) laufen auf eigener Hardware des Betreibers, die sich in
+Österreich befindet. Es kommt somit kein externer Hosting-Anbieter zum
+Einsatz, der als Auftragsverarbeiter (Art. 28 DSGVO) einzubinden wäre — der
+Betreiber verarbeitet die Daten selbst, physisch innerhalb der EU/des EWR.
+Eine Drittstaatenübermittlung (Art. 44 ff. DSGVO) findet nicht statt.
 
 ## 6. Deine Rechte
 
