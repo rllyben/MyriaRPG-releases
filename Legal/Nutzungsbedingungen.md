@@ -1,6 +1,6 @@
 # Nutzungsbedingungen — MyriaRPG
 
-Stand: 2026-08-21
+Stand: 2026-08-22
 
 Diese Nutzungsbedingungen regeln die Nutzung von MyriaRPG (WPF-Client,
 Auth-Server, Realm-Server; im Folgenden „das Spiel"), betrieben von rllyben

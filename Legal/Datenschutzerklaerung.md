@@ -58,7 +58,33 @@ nicht statt.
 Der WPF-Client und die Server setzen keine Cookies, kein Analytics- und
 kein Werbetracking ein.
 
-### 2.5 Übertragungssicherheit
+### 2.5 Server-Logs und Backups
+
+Die Server führen kein anwendungsseitiges Zugriffsprotokoll (kein Logging
+von IP-Adressen, aufgerufenen Endpunkten oder Anfragen pro Nutzer:in). Es
+wird lediglich eine minimale Startmeldung (Versionsnummer) auf der
+Konsolenausgabe protokolliert. Wird ein Server als Systemdienst (systemd)
+betrieben, kann diese Konsolenausgabe vom Betriebssystem im System-Journal
+mitprotokolliert werden — das erfolgt durch das Betriebssystem, nicht durch
+die Anwendung selbst, und unterliegt dessen Standard-Aufbewahrungsdauer.
+
+Aktuell werden **keine Backups** der Account- und Spielstanddatenbanken
+angefertigt. Sollte sich das ändern, wird diese Erklärung um Ort, Dauer und
+Absicherung der Backups ergänzt.
+
+### 2.6 Tunneling-Dienst (reiner Transit)
+
+Die Verbindung zum Realm-Server läuft über einen TCP-Tunneling-Dienst
+(playit.gg), da der Server nicht direkt über eine öffentliche IP-Adresse
+erreichbar ist. Da die gesamte Kommunikation Ende-zu-Ende TLS-verschlüsselt
+ist (siehe Abschnitt 2.7 „Übertragungssicherheit" unten), sieht dieser
+Dienst ausschließlich verschlüsselte, für ihn nicht einsehbare Datenpakete
+und kann daher keine personenbezogenen Inhalte (Zugangsdaten,
+Spielstanddaten) mitlesen. Es handelt sich um eine reine
+Transportvermittlung ohne inhaltlichen Zugriff, nicht um eine
+Auftragsverarbeitung im Sinne von Art. 28 DSGVO.
+
+### 2.7 Übertragungssicherheit
 
 Sämtliche Kommunikation zwischen dem WPF-Client und den Servern (Login,
 Registrierung, Spielstand-Synchronisation) erfolgt verschlüsselt über TLS
@@ -102,7 +128,11 @@ Nach der DSGVO stehen dir insbesondere folgende Rechte zu:
 - **Berichtigung** (Art. 16 DSGVO) unrichtiger Daten — Benutzername und
   Passwort kannst du jederzeit selbst über „Account" im
   Mehrspieler-Menü des WPF-Clients ändern (Passwortänderung erfordert die
-  Eingabe des aktuellen Passworts)
+  Eingabe des aktuellen Passworts). Solltest du dein Passwort vergessen
+  haben und dich daher nicht mehr einloggen können, gibt es mangels
+  hinterlegter E-Mail-Adresse keine automatisierte Zurücksetzfunktion —
+  wende dich in diesem Fall an die unten genannte Kontaktadresse; der
+  Betreiber kann dein Passwort nach Identitätsprüfung manuell zurücksetzen
 - **Löschung** (Art. 17 DSGVO) deines Accounts und der zugehörigen
   Spielstanddaten
 - **Einschränkung der Verarbeitung** (Art. 18 DSGVO)

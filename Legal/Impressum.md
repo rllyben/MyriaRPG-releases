@@ -1,6 +1,6 @@
 # Impressum — MyriaRPG
 
-Stand: 2026-08-21
+Stand: 2026-08-22
 
 ## Angaben zum Betreiber
 
